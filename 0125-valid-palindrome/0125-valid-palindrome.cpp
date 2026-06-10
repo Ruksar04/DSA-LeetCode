@@ -7,12 +7,12 @@ public:
                 cleantext += toupper(c);
             }
         }
+        string output = cleantext;
         int left = 0;
         int right = cleantext.size()-1;
-        string output = cleantext;
-        while(left<right){
+        while(left < right){
             char temp = cleantext[left];
-            cleantext[left]=cleantext[right];
+            cleantext[left] = cleantext[right];
             cleantext[right] = temp;
             left++;
             right--;
